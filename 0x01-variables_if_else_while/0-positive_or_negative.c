@@ -1,29 +1,23 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 /**
- * main - Print the numbers from 00 to 99
- * Return: Always (Success)
+ * main - main block
+ * Description: Get a random amd print the number
+ * and if it is positive, negative or zero
+ * Return: 0
  */
 int main(void)
 {
-	int c, i;
-	c= i = '0';
-	for (c= '0'; c <='9'; c++)
-	{
-		for (i = '0'; i = '9'; i++)
-		{
-			putchar(c);
-			putchar(i);
+	int n;
 
-			if ((c !='9') || (c == '9' && i != '9'))
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-
-	putchar('\n');
-
+	srand(time(0);
+	n = rand() - RAND_MAX /2;
+	if (n > 0)
+		printf("%i is positive\n");
+	else if (n < 0)
+		printf("%i is negative\n");
+	else
+		printf("%i is zero\n");
 	return (0);
-}
-
+}	
